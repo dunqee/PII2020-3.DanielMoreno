@@ -1,0 +1,90 @@
+Body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body>article>section>h1{
+    padding-top: 25px;
+    
+}
+body>article>section{
+   color:  #297889;
+   padding-left: 25px;
+}
+
+section.sector-one{
+    color:  #297889;
+   padding-left: 25px;
+}
+
+#id-p-one{
+    color: black;
+    padding-right: 300px;
+}
+
+#id-h4{
+    color: black;
+    padding-top: 10px;
+    
+}
+#id-h1{
+    
+}
+
+#id-h5{
+    color:#E6E6E9;
+    
+    
+}
+#id-fecha{
+    padding-left: 1000px;
+}
+
+#id-profile{
+    width: 300px;
+    height: 287.5px;
+    background-color: #32879a;
+    float: right;
+    margin-top: 52.6px;
+    
+    
+}
+
+#id-profile-description{
+    width: 325px;
+    height: 700px;
+    background-color: #40aac1;
+    float: right; 
+
+    
+}
+#img{
+    width:150px;
+    height:150px;
+    border-radius:150px;
+    display: block;
+    margin-top: 30px;
+    margin-left: 67px;
+    
+
+}
+#Name{
+    color: #ffffff ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center;
+
+}
+#ocupation{
+    color: #8dbac5;
+    text-align: center;
+}
+
+section.icons{
+    color: white;
+    padding-left: 40px;
+    
+}
+
+section.education{
+    color: white;
+    padding-left: 40px;
+    padding-top: 20px;
+}
