@@ -7,29 +7,21 @@ $hostdatabase = "univa";
 $connection = mysqli_connect($hostname,$hostuser,$hostpassword,$hostdatabase);
 $sqlquery = "SELECT * FROM users";
 $result = mysqli_query($connection,$sqlquery);
-$cont =0;
 $newPass = $_GET['newPassword'];
-$sqlUpdate = "UPDATE users SET passwordU = '$newPass' where idUser = '$cont'";
+$userEmail = $_GET['userEmail'];
+$sqlUpdate = "UPDATE users SET passwordU = '$newPass' where email = '$userEmail'";
 
 if (mysqli_num_rows($result) >0) {
     while($row = mysqli_fetch_assoc($result)){
         
-        $userEmail = $_GET['userEmail'];
-        
         if ($row['email']== $userEmail){
-
-            echo "USER FOUND";
-            echo $cont;
             if (mysqli_query($connection, $sqlUpdate)) {
-                echo "Record updated successfully";
+                echo "updated successfully";
               } else {
-                echo "Error updating record: " . mysqli_error($connection);
+                echo "Error updating: ". mysqli_error($connection);
               }
-              
               mysqli_close($connection);
-            
         }
-        $cont = $cont +1;
 
 
     }  
